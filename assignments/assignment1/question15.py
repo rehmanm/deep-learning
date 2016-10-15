@@ -1,6 +1,6 @@
 
 
-text = input('enter text: ')
+text = input('enter text: ') 
 
 listText = text.split()
 dictText = {}
