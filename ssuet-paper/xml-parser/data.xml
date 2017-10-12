@@ -1,0 +1,9 @@
+<?xml version ='1.0'?>
+    <EMPLIST>
+        <EMP id="1">
+            <ENAME>MARY</ENAME>
+        </EMP>
+        <EMP>
+            <ENAME>SCOTT</ENAME>
+        </EMP>
+    </EMPLIST>
