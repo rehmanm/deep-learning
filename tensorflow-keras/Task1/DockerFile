@@ -1,0 +1,6 @@
+FROM tensorflow/tensorflow:latest-py3
+LABEL maintainer = "muhammad.abdulrehman@gmail.com"
+COPY . /src
+WORKDIR /src
+ENTRYPOINT ["python", "./main.py"]
+
