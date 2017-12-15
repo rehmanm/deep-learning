@@ -25,7 +25,7 @@ print("peak to peak distance (Difference between Max and Min) = ", np.ptp(revenu
 print(revenue, np.sort(revenue))
 print("median = ", np.median(np.msort(revenue)))
 print(revenue.mean())
-print("variance = ", np.var(revenue), np.mean((revenue - revenue.mean())**2))
+print("variance = ", np.var(revenue), np.meanx                                ((revenue - revenue.mean())**2))
 
 
 
