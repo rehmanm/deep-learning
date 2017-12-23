@@ -1,7 +1,7 @@
 import numpy as np
 from printGraph import getData
-import matplotlib
-matplotlib.use('agg')
+#import matplotlib
+#matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
