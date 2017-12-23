@@ -1,5 +1,7 @@
 import numpy as np
 from printGraph import getData
+import matplotlib
+matplotlib.use('agg')
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
@@ -34,7 +36,7 @@ def applyRegressionMultipleParameters(x_train, y_train):
             sess.run(train_op, {X:x, Y:y})
 
     w_val = sess.run(w)
-    print(w_val)
+    print("w_val (multiple)s:" + str(w_val))
     sess.close()
 
     #print(set(zip(x_train, y_train)))
@@ -44,8 +46,8 @@ def applyRegressionMultipleParameters(x_train, y_train):
     plt.title("Linear Regression with one variable with parameter(s): " +  str(w_val) )
     plt.scatter(x_train, y_train, color="r", marker='x')
     y_learned = np.matmul(temp, w_val)
-    comparison = np.hstack((y_train.reshape(m, 1), y_learned.reshape(m, 1)))
-    print("Comparison: {}".format(comparison))
+    #comparison = np.hstack((y_train.reshape(m, 1), y_learned.reshape(m, 1)))
+    #print("Comparison: {}".format(comparison))
     plt.plot(x_train, y_learned, 'b')
     plt.draw()
 
