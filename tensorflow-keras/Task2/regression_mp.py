@@ -43,7 +43,7 @@ def applyRegressionMultipleParameters(x_train, y_train):
     temp = np.hstack((np.ones(m).reshape(m, 1), x_train.reshape(m, 1)))
     fig = plt.figure(3)
     fig.clear()
-    plt.title("Linear Regression with one variable with parameter(s): " +  str(w_val) )
+    plt.title("Linear Regression with multiple parameter(s): " +  str(w_val) )
     plt.scatter(x_train, y_train, color="r", marker='x')
     y_learned = np.matmul(temp, w_val)
     #comparison = np.hstack((y_train.reshape(m, 1), y_learned.reshape(m, 1)))
