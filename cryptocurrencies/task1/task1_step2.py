@@ -1,3 +1,7 @@
 import helper_function as helper
 
-print(helper.historicalData())
+df = helper.historicalData()
+
+print(df)
+
+df.to_csv('data.csv')
